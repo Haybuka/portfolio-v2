@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    /* background-color: var(--bg-light); */
+    transition: all 0.2s ease-in;
+    height: 100vh;
+    /* background-color: red; */
+}
+body.dark{
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+:root{
+    --text-light:#000;
+    --bg-light:#fff;
+    --text-dark:#fff;
+    --bg-dark:#000;
+}
+
+.container{
+    padding: 20px 120px;
+}
+.togglerMode{
+    display: block;
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    top: 200px;
+    border-radius: 20px;
+    left: 100px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+nav h1{
+    font-family: 'Lobster',cursive;
+    color: inherit;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li{
+    margin: 0 20px;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    position: relative;
+}
+.nav-li{
+    position: relative;
+}
+.nav-li::after{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s ease-in;
+  background-color: var(--text-light);
+}
+.nav-li:hover::after{
+    width: 80%;
+}
+a.connect{
+    border: 1px solid var(--text-light);
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.2s ease-in;
+    z-index: 10;
+}
+a.connect::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    border-radius: 10px;
+    height: 0%;
+    background-color:var(--bg-dark);
+    z-index: -10;
+    transition: all 0.2s ease-in;
+    
+}
+a.connect:active::before,
+a.connect:hover::before
+{
+    opacity: 0.6;
+    height: 100%;
+    z-index: 5;
+}
+
+main{
+    text-align: center;
+    width: 600px;
+    /* background-color: yellow; */
+    margin: 20px auto;
+}
+
+main h3{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+main h3 span{
+    font-family: 'Lobster',cursive;
+    font-weight: bold;
+}
+main div{
+    line-height: 35px;
+   
+}
