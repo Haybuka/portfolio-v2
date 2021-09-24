@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+   --font-lightcolor:rgb(0, 0, 0);
+   --font-darkcolor:rgb(255, 255, 255);
+   --header-lightcolor:#454545;
+   --header-darkcolor:#ffffffdb;
+   --light-bg:#ffffff;
+   --dark-bg:#000000;
+   --text-lightshadow:#fff;
+   --btn-signup:#21B4AB;
+   
+   
+}
+body{
+    background-color: var(--light-bg);
+    color: var(--font-lightcolor);
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden !important;
+    height: 100vh;
+
+}
+
+body.toggle{
+    overflow: hidden;
+}
+body.dark{
+    background-color: var(--dark-bg);
+    color: var(--font-darkcolor);
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+nav{
+    display: grid;
+    color: inherit;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    background-color: inherit;
+}
+nav .logo{
+    background-image: url('/assets/image/logo/logo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px;
+    background-size: contain;
+    grid-column: 1/2;
+}
+nav h3{
+    text-shadow: 1px 1px 2px var(--text-lightshadow);
+}
+.navbar-nav{
+    grid-column: 4/13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+.navbar-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+.nav-toggle{
+    grid-row:1/2;
+    grid-column: 12/13;
+    display: none;
+}
+.btn{
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.btn::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    content: '';
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    z-index: -1;
+}
+.btn:hover::after{
+    transform: scaleX(1.2);
+    opacity: 0;
+}
+.btn-signup{
+    background-color: var(--btn-signup);
+    color: #fff;
+}
+.btn-signup::after{
+    background-color: var(--btn-signup);
+}
+.btn-get-started::after{
+    background-color: var(--btn-started);
+}
+main{
+  text-align: center;
+  position: relative;
+  /* background-image: url('/assets/image/BannerDots.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; */
+  
+}
+main section{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px; */
+    width: 500px;
+    margin: 0 auto;
+   transform: translateY(100px);
+}
+/* .container{
+    padding: 0 100px;
+   text-align: center;
+} */
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    list-style: 50px;
+    color: inherit;
+}
+h1 span{
+    font-weight: bold;
+    font-family: 'Lobster',cursive;
+}
+.typed-cursor.typed-cursor--blink{
+    color: inherit;
+}
+@media screen and (max-width:860px){
+    main section{
+        width: auto;
+    }
+    body.toggle nav{
+        box-shadow: 1px 1px 3px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        position: relative;
+        background-color: inherit;
+    }
+    body.toggle nav::after{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.8;
+        content: '';
+        z-index: -10;
+        top: 0;
+        left: 0;
+    }
+    .navbar-nav{
+        grid-row: 2/3;
+        grid-column: 1/13;
+        display: block;
+        height: 0;
+        overflow: hidden;
+    
+    }
+    .btn::after{
+        display: none;
+    }
+    .navbar-nav.show{
+        height: auto;
+        margin: 25px 0;
+        overflow: auto;
+    }
+    .navbar-nav li{
+        display: block;
+        text-align: left;
+        height: 0;
+        position: relative;
+    }
+    .navbar-nav.show li{
+        height: auto;
+        margin: 30px 0;
+    }
+    .navbar-nav li::after{
+        content: url('/assets/image/logo/chevron-right.svg');
+        width: 5%;
+        height: 80%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .nav-toggle{
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        width: 35px;
+    }
+    .nav-toggle img{
+        width: 100%;
+    }
+    .navbar-nav li .btn-signup{
+        display: block;
+        text-align: center;
+    }
+    .navbar-nav ul:nth-child(2) {
+        margin: 20px 0;
+    }
+    .navbar-nav ul:nth-child(2) li::after{
+        content: '';
+    }
+    .navbar-nav ul:nth-child(2) li:nth-child(2){
+        margin: 25px 0;
+    }
+    .trans-left,.trans-right{
+        transform: translate(0);
+    }
+    
+}
