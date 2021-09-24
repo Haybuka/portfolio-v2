@@ -152,9 +152,9 @@ main div{
 
 
 @media screen and (max-width:640px){
-   nav,
-   header ul{display: block;}
-   header ul{
+   nav{display: block;}
+   /* header ul{display: block;} */
+   /* header ul{
        text-align: center;
        margin: 10px 0;
        display: none;
@@ -166,14 +166,21 @@ main div{
    }
    .nav-li:hover::after{
     width: 0%;
+} */
+.container{
+    padding: 20px 10px ;
+}
+header li{
+    margin: 0;
 }
 .show{
     display: block;
 }
 nav section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 .harmburger{
     display: block;

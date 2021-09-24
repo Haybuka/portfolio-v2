@@ -7,6 +7,6 @@ modeToggle.addEventListener('click',function(){
    body.classList.toggle('dark') 
 })
 
-harmburger.addEventListener('click',()=>{
-   navList.classList.toggle('show')
-})
+// harmburger.addEventListener('click',()=>{
+//    navList.classList.toggle('show')
+// })
