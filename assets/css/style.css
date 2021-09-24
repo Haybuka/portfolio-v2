@@ -157,10 +157,7 @@ main div{
    header ul{
        text-align: center;
        margin: 10px 0;
-       position: absolute;
-       width: 100vw;
-       height: 80vh;
-       background-color: #fff;
+       display: none;
        transform:translateY(30px) ;
        transition: all 0.25s ease-in;
    }
@@ -171,7 +168,7 @@ main div{
     width: 0%;
 }
 .show{
-    transform: translateY(-1000px);
+    display: block;
 }
 nav section{
     display: flex;
