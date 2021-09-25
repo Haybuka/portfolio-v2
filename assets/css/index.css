@@ -9,7 +9,7 @@
    --header-lightcolor:#454545;
    --header-darkcolor:#ffffffdb;
    --light-bg:#ffffff;
-   --dark-bg:#000000;
+   --dark-bg:#000000e1;
    --text-lightshadow:#fff;
    --btn-signup:#21B4AB;
    
@@ -20,7 +20,7 @@
     z-index: 5;
     width: 30px;
     height: 30px;
-    top: 90px;
+    top: 93px;
     left: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -68,6 +68,7 @@ nav{
     align-items: center;
     padding: 15px 35px;
     background-color: inherit;
+    box-shadow:1px 2px 5px #aeabab61;
 }
 nav .logo{
     background-image: url('/assets/image/logo/logo.png');
