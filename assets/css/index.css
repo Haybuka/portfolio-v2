@@ -55,9 +55,10 @@ nav a{
     color: inherit;
     font-size: 18px;
 }
+body.toggle .dark-mode.mode.mode-view+nav::after,
 .dark-mode.mode.mode-view+nav{
-  background-color: #fff;
-  color:#000;
+  background-color: rgb(34, 33, 33);
+  color:rgb(223, 217, 217);
 }
 nav{
     display: grid;
