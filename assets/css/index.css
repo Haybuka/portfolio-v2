@@ -27,7 +27,7 @@
 }
 .light-mode{
     left: 60px;
-    
+
 }
 .mode-view{
     opacity: 0;
@@ -240,5 +240,7 @@ h1 span{
     .trans-left,.trans-right{
         transform: translate(0);
     }
-    
+    nav{
+        padding: 15px 10px;
+    }
 }
