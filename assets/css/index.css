@@ -20,7 +20,7 @@
     z-index: 5;
     width: 30px;
     height: 30px;
-    top: 80px;
+    top: 90px;
     left: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -54,6 +54,10 @@ nav a{
     text-decoration: none;
     color: inherit;
     font-size: 18px;
+}
+.dark-mode.mode.mode-view+nav{
+  background-color: #fff;
+  color:#000;
 }
 nav{
     display: grid;
