@@ -9,7 +9,7 @@
    --header-lightcolor:#454545;
    --header-darkcolor:#ffffffdb;
    --light-bg:#ffffff;
-   --dark-bg:#000000e1;
+   --dark-bg:#000;
    --text-lightshadow:#fff;
    --btn-signup:#21B4AB;
    
@@ -57,7 +57,7 @@ nav a{
 }
  .dark-mode.mode.mode-view+nav::after,
 .dark-mode.mode.mode-view+nav{
-  background-color: rgb(34, 33, 33);
+  background-color: #181818;
   color:rgb(223, 217, 217);
 }
 nav{
