@@ -213,6 +213,7 @@ h1 span{
         height: auto;
         margin: 25px 0;
         overflow: auto;
+        padding: 0 20px;
     }
     .navbar-nav li{
         display: block;
@@ -223,6 +224,10 @@ h1 span{
     .navbar-nav.show li{
         height: auto;
         margin: 30px 0;
+        transition: all 0.25s ease-in;
+    }
+    .navbar-nav.show li:hover{
+        transform: translateY(-2px);
     }
     .navbar-nav li::after{
         content: url('/assets/image/logo/chevron-right.svg');
@@ -260,5 +265,8 @@ h1 span{
     }
     nav{
         padding: 15px 10px;
+    }
+    .navbar-right li{
+        text-align: center;
     }
 }
