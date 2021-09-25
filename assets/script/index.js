@@ -33,7 +33,7 @@ modeToggle.forEach(mode=>{
            lightMode.classList.toggle('mode-view')      
 
         }
-        console.log(this)
+    
         body.classList.toggle('dark')
         
     })
