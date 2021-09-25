@@ -15,6 +15,23 @@
    
    
 }
+.dark-mode,.light-mode{
+    position: fixed;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    left: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.light-mode{
+    left: 60px;
+    
+}
+.mode-view{
+    opacity: 0;
+}
 body{
     background-color: var(--light-bg);
     color: var(--font-lightcolor);
@@ -111,26 +128,14 @@ nav h3{
 main{
   text-align: center;
   position: relative;
-  /* background-image: url('/assets/image/BannerDots.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center; */
-  
+ 
 }
 main section{
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 50px; */
+    
     width: 500px;
     margin: 0 auto;
-   /* transform: translateY(100px); */
 }
-/* .container{
-    padding: 0 100px;
-   text-align: center;
-} */
+
 h1 {
     font-size: 50px;
     font-weight: normal;
