@@ -99,6 +99,11 @@ nav h3{
     grid-column: 12/13;
     display: none;
 }
+.navbar-right{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
 .btn{
     padding: 15px 20px;
     border-radius: 10px;
@@ -187,6 +192,10 @@ h1 span{
         z-index: -10;
         top: 0;
         left: 0;
+    }
+    .navbar-right
+    {
+        display: block;
     }
     .navbar-nav{
         grid-row: 2/3;
